@@ -1,0 +1,105 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 22rem;
+    box-shadow: 0 0 20px black;
+    border-radius: 0.75em;
+    overflow: hidden;
+}
+
+.calc_container{
+    border-radius: 0.75em;
+    overflow: hidden;
+    outline: 1px solid grey;
+}
+
+.display{
+    background-color: rgb(54, 52, 52);
+    height: 90px;
+    color: white;
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: right;
+    font-size: 1.7rem;
+}
+
+.history{
+    font-size: 1.1rem;
+    color: darkgrey;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-areas: 
+    "plus minus multiply divide"
+    "one two three equal"
+    "four five six equal"
+    " seven eight nine equal"
+    " zero decimal clear equal";
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.multiply{
+    grid-area: multiply;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+.equal{
+    grid-area: equal;
+}
+
+button{
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    border: 1px solid grey;
+}
+
+button:hover{
+   background-color: rgb(211, 207, 207);
+}
+
+.operator{
+    background-color: darkgrey;
+}
+
+.operator:hover{
+    background-color: rgb(131, 130, 130);
+}
+
+.equal{
+    background-color: rgb(255, 119, 0);
+}
+
+.equal:hover{
+    background-color: rgb(235, 119, 17);
+}
+
